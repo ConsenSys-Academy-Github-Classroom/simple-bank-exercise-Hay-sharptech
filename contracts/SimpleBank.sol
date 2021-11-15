@@ -85,6 +85,6 @@ contract SimpleBank{
       // 1. Use a require expression to guard/ensure sender has enough funds
       // 2. Transfer Eth to the sender and decrement the withdrawal amount from
       //    sender's balance
-      // 3. Emit the appropriate event for this message
+      // 3. Emit the appropriate event for this message.
     }
 }
