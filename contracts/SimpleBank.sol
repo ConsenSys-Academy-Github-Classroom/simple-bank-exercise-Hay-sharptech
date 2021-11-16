@@ -78,13 +78,13 @@ contract SimpleBank{
       balances[msg.sender] = newBalance;
       emit LogWithdrawal(msg.sender, withdrawAmount, newBalance);
       return newBalance;
-      // If the sender's balance is at least the amount they want to withdraw,
+      // If the senders balance is at least the amount they want to withdraw,
       // Subtract the amount from the sender's balance, and try to send that amount of ether
-      // to the user attempting to withdraw.
-      // return the user's balance.
+      // to the user attempting to withdraw
+      // return the user's balance
       // 1. Use a require expression to guard/ensure sender has enough funds
       // 2. Transfer Eth to the sender and decrement the withdrawal amount from
-      //    sender's balance
-      // 3. Emit the appropriate event for this message.
+      //    senders balance
+      // 3. Emit the appropriate event for message.
     }
 }
